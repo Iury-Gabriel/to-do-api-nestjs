@@ -1,0 +1,45 @@
+### Criar uma nova tarefa
+POST http://localhost:3000/tasks
+Content-Type: application/json
+
+{
+  "title": "Fazer uma api em NestJS",
+  "description": "criar uma API com Prisma"
+}
+
+###
+
+### Obter todas as tarefas
+GET http://localhost:3000/tasks
+
+###
+
+### Obter uma tarefa específica pelo ID
+GET http://localhost:3000/tasks/1
+
+###
+
+### Atualizar uma tarefa (completa) pelo ID
+PUT http://localhost:3000/tasks/1
+Content-Type: application/json
+
+{
+  "title": "NestJS Atualizado",
+  "description": "Atualizando a descrição da tarefa",
+  "completed": true
+}
+
+###
+
+### Atualizar uma tarefa (parcial) pelo ID
+PATCH http://localhost:3000/tasks/2
+Content-Type: application/json
+
+{
+  "completed": true
+}
+
+###
+
+### Excluir uma tarefa pelo ID
+DELETE http://localhost:3000/tasks/1
