@@ -1,3 +1,7 @@
+### Rota principal
+
+GET http://localhost:3000/
+
 ### Criar uma nova tarefa
 POST http://localhost:3000/tasks
 Content-Type: application/json
